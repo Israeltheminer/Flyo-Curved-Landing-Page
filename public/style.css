@@ -45,7 +45,7 @@ nav > div > a {
 }
 
 .top_email_input{
-   min-width: 15rem;
+   width: 20rem;
    height: 3rem;
    border: solid 2px hsl(0, 0%, 75%);
    border-radius: 4px;
