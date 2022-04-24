@@ -1,0 +1,360 @@
+body{
+   font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+   font-family: 'Raleway';
+   font-weight: 800;
+   font-size: 2.75rem;
+   font-weight: bold;
+   min-width: 15rem;
+   max-width: 50rem;
+}
+
+h2 {
+   font-family: 'Raleway';
+   font-weight: 800;
+   font-size: 2.2rem;
+   font-weight: bold
+}
+
+.base_text{
+   font-size: 1.25rem;
+}
+
+.logo{
+   max-width: 15rem;
+   padding-bottom: 1rem;
+}
+
+nav > div > a {
+   margin: 0 4rem;
+   font-size: 1.2rem
+}
+
+.top_container{
+   padding: 5rem 6.6%;
+}
+
+.top_page{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 1.25rem;
+   margin-top: 2.5rem;
+   align-items: center;
+}
+
+.top_email_input{
+   min-width: 15rem;
+   height: 3rem;
+   border: solid 2px hsl(0, 0%, 75%);
+   border-radius: 4px;
+   color: gray;
+   opacity: 70%;
+   margin-top: 3rem;
+}
+
+.second_page{
+   background-color: hsl(240, 75%, 98%);
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 1.25rem;
+   padding: 5rem 6.6%;
+   align-items: center;
+}
+
+.flyo_works{
+   font-size: 1.2rem;
+   text-decoration: underline;
+   color: hsl(170, 45%, 43%);
+}
+.third_page{
+   background-color: hsl(238, 22%, 44%);
+   color: white;
+}
+
+.third_page{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 5rem;
+   padding: 5rem 6.6%;
+   align-items: center;
+}
+
+.testimonial{
+   background-color: #fff;
+   padding: 3rem;
+   border-radius: 10px;
+   max-width: 30rem;
+}
+.avatar_icon{
+   display: inline;
+   width: 4rem;
+   border-radius: 100%;
+}
+
+.user_detail{
+   display: flex;
+   align-items: center;
+   margin-top: 1rem;
+}
+
+.bottom_email_input{
+   width: 25rem;
+   height: 3rem;
+   border: solid 2px hsl(0, 0%, 75%);
+   border-radius: 4px;
+   color: black;
+}
+
+.blue_button{
+   max-width: 13rem;
+   min-width: 9rem;
+   color: #fff;
+   background-color: hsl(224, 93%, 58%);
+   height: 3rem;
+   border-radius: 4px;
+   margin: 1rem 0;
+}
+button:hover{
+   opacity: 70%;
+}
+
+.bottom_container{
+   position: relative;
+   background-color: hsl(243, 87%, 12%);
+   color: white;
+   text-align: left;
+   padding: 5rem 6.6%;
+   font-size: 0.9rem;
+}
+.bottom_container a:hover{
+   opacity: 70%;
+}
+.bottom_grid{
+   display: grid;
+   grid-template-columns: 2fr 1fr 1fr 2fr;
+}
+.bottom_table td, li {
+   padding: 0.5rem 0;
+}
+
+footer{
+   width: 60%;
+   position: absolute;
+   bottom: 0.5rem;
+   left: 50%;
+   transform: translate(-50%, 0);
+}
+
+.social_icon{
+   width: 2rem;
+   padding: 6px;
+}
+
+.social_box{
+   margin: 0.5rem;
+   border: 2px solid #fff;
+   border-radius: 100%;
+}
+.social_box:hover{
+   opacity: 50%;
+}
+
+.hide{
+   display: none;
+}
+
+/* // Small laptops Sizes */
+@media (max-width: 1250px) {
+   h1{
+      font-size: 2.5rem;
+      min-width: 28rem;
+   }
+   nav > div > a {
+      margin: 0 3rem;
+      font-size: 1.15rem;
+   }
+   .base_text{
+      font-size: 1.15rem;
+   }
+
+}
+@media (max-width: 1050px) {
+   h1{
+      font-size: 2.0rem;
+      min-width: 28rem;
+   }
+   h2{
+      font-size: 1.8rem;
+   }
+   nav > div > a {
+      margin: 0 2rem;
+      font-size: 1.05rem;
+   }
+   .base_text{
+      font-size: 1.05rem;
+   }
+}
+/* // Tablet Sizes */
+@media (max-width: 900px) {
+   body{
+      text-align: center;
+   }
+   h1{
+      font-size: 2.4rem;
+      min-width: 15rem;
+   }
+   h2{
+      font-size: 1.8rem;
+   }
+   nav > div > a {
+      margin: 0 1rem;
+      font-size: 1.2rem;
+   }
+   .base_text{
+      font-size: 1.2rem;
+   }
+   .top_page{
+      grid-template-columns: 1fr;
+   }
+   .top_page > div:nth-of-type(2){
+      grid-row: 1;
+   }
+   .second_page{
+      grid-template-columns: 1fr;
+   }
+   .second_page > div:nth-of-type(2){
+      grid-row: 1;
+   }
+   .third_page{
+      grid-template-columns: 1fr;
+   }
+   .illustration{
+      max-width: 35rem;
+      margin-bottom: 4rem;
+   }
+   .testimonial{
+      text-align: left;
+      margin: 4rem auto;
+   }
+   .bottom_grid{
+      grid-template-columns: 2.6fr 2.2fr 2.2fr;
+      grid-template-rows: 3fr 1fr;
+   }
+   .bottom_grid > div:nth-of-type(4){
+      grid-row: 2;
+      grid-column: 2/4;
+   }
+   .avatar_icon{
+      width: 3.5rem;
+   }
+   .logo{
+      max-width: 12rem;
+   }
+}
+
+@media (max-width: 650px) {
+   h1{
+      font-size: 2.0rem;
+   }
+   h2{
+      font-size: 1.6rem;
+   }
+   nav > div > a {
+      margin: 0 0.65rem;
+      font-size: 1.0rem;
+   }
+   .base_text{
+      font-size: 1.0rem;
+   }
+   .illustration{
+      max-width: 22rem;
+      margin-bottom: 4rem;
+   }
+   .testimonial{
+      text-align: left;
+      margin: 4rem auto;
+   }
+   .bottom_email_input{
+      width: 20rem;
+   }
+   .bottom_container{
+      font-size: 0.6rem;
+   }
+   .social_icon{
+      width: 1.5rem;
+   }
+   .bottom_grid{
+      grid-template-columns: 4fr 2fr 2fr;
+      grid-template-rows: 3fr 1fr;
+   }
+   .bottom_grid > div:nth-of-type(4){
+      grid-row: 2;
+      grid-column: 2/4;
+   }
+   .logo{
+      max-width: 9rem;
+   }
+   .inputs, .blue_button{
+      height: 2rem;
+   }
+}
+
+@media (max-width: 500px) {
+   h1{
+      font-size: 1.9rem;
+   }
+   h2{
+      font-size: 1.4rem;
+   }
+   nav > div > a {
+      margin: 0 0.5rem;
+      font-size: 0.9rem;
+   }
+   .base_text{
+      font-size: 0.9rem;
+   }
+   .illustration{
+      max-width: 19rem;
+      margin-bottom: 4rem;
+   }
+   .avatar_icon{
+      width: 2rem;
+   }
+   .logo{
+      max-width: 7rem;
+   }
+   .contact{
+      width: 0.7rem;
+   }
+}
+
+@media (max-width: 375px) {
+   h1{
+      font-size: 1.8rem;
+   }
+   h2{
+      font-size: 1.25rem;
+   }
+   nav > div > a {
+      margin: 0 0.2rem;
+      font-size: 0.8rem;
+   }
+   .illustration{
+      max-width: 17rem;
+      margin-bottom: 3rem;
+   }
+   .base_text{
+      font-size: 0.8rem;
+   }
+   .logo{
+      max-width: 6rem;
+   }
+   .top_email_input{
+      width: 16rem;
+   }
+   .bottom_email_input{
+      width: 16rem;
+   }
+}
