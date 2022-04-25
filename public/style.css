@@ -140,11 +140,12 @@ button:hover{
 }
 
 footer{
-   width: 60%;
+   width: auto;
    position: absolute;
    bottom: 0.5rem;
    left: 50%;
    transform: translate(-50%, 0);
+   text-align: center;
 }
 
 .social_icon{
@@ -328,6 +329,21 @@ footer{
    .contact{
       width: 0.7rem;
    }
+   .bottom_container{
+      padding-left: 2.5rem;
+   }
+   .bottom_grid{
+      display: flex;
+      flex-direction: column;
+      align-items: left;
+      font-size: 0.85rem;
+   }
+   .bottom_grid > div{
+      margin: 1.25rem 0;
+   }
+   .testimonial{
+      padding: 2.2rem;
+   }
 }
 
 @media (max-width: 375px) {
@@ -356,5 +372,8 @@ footer{
    }
    .bottom_email_input{
       width: 16rem;
+   }
+   .testimonial{
+      padding: 1.5rem;
    }
 }
